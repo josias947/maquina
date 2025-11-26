@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffbea;
+  }
+  .hero {
+    background: linear-gradient(to right, #ffe082, #fff59d);
+    padding: 40px 0;
+    text-align: center;
+  }
+  .hero img {
+    max-width: 200px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .productos .card img {
+    height: 200px;
+    object-fit: contain;
+  }
+  footer {
+    background-color: #c62828;
+    color: white;
+    padding: 20px 0;
+  }
+  .contacto a {
+    text-decoration: none;
+    color: #000;
+  }
+  .btn-nav {
+    margin-top: 15px;
+  }
+  #carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+  }
+  
