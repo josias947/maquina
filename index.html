@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Máquina Pest Control</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Carrito Flotante -->
+  <div id="carrito" class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      🛒 Carrito <span class="badge bg-light text-dark" id="carrito-count">0</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end p-3" style="min-width: 300px;">
+      <div id="carrito-items">Carrito vacío</div>
+      <hr>
+      <a href="#formulario" id="btn-realizar-pedido" class="btn btn-success w-100 mt-2">Realizar Pedido</a>
+
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="#">La Máquina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-center">
+      <img src="C:\Users\lapto\Downloads\Webs\MaquinaWeb\Imagenes\logomaquina.jpg" alt="Logo La Máquina" class="img-fluid">
+      <h1>La Maquina Pest Control</h1>
+      <p>20 años de experiencia en control de plagas y venta de productos</p>
+      <a href="#productos" class="btn btn-warning btn-nav">Ver Productos</a>
+      <a href="#servicios" class="btn btn-outline-dark btn-nav">Ver Servicios</a>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="productos py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Productos</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="producto1.jpg" class="card-img-top" alt="Mata Moscas">
+            <div class="card-body">
+              <h5 class="card-title">Mata Moscas</h5>
+              <p class="card-text">Spray potente para eliminar moscas en segundos. Ideal para el hogar o negocios.</p>
+              <button class="btn btn-success w-100 agregar-carrito" data-producto="Mata Moscas">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="producto2.jpg" class="card-img-top" alt="Mata Todo">
+            <div class="card-body">
+              <h5 class="card-title">Mata Todo</h5>
+              <p class="card-text">Solución versátil contra cucarachas, hormigas, alacranes y más.</p>
+              <button class="btn btn-success w-100 agregar-carrito" data-producto="Mata Todo">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="producto3.jpg" class="card-img-top" alt="Polvo Insecticida">
+            <div class="card-body">
+              <h5 class="card-title">Polvo Insecticida</h5>
+              <p class="card-text">Uso seguro y eficaz para lugares con alto tráfico de insectos.</p>
+              <button class="btn btn-success w-100 agregar-carrito" data-producto="Polvo Insecticida">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Áreas de Servicio</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-3">
+        <div class="col">Casas</div><div class="col">Tiendas</div>
+        <div class="col">Hoteles</div><div class="col">Colegios</div>
+        <div class="col">Pizzerías</div><div class="col">Colmados</div>
+        <div class="col">Almacenes</div><div class="col">Hospitales</div>
+        <div class="col">Heladerías</div><div class="col">Cafeterías</div>
+        <div class="col">Condominios</div><div class="col">Residenciales</div>
+        <div class="col">Restaurantes</div><div class="col">Apartamentos</div>
+        <div class="col">Supermercados</div><div class="col">Salones de Belleza</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto py-5">
+    <div class="container text-center">
+      <h2>Contáctanos</h2>
+      <p>📞 809-239-4958</p>
+      <p>📱 <a href="https://wa.me/18498163070">WhatsApp: +1 (849) 816-3070</a></p>
+      <p>Síguenos:</p>
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 La Máquina Pest Control. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
